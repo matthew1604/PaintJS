@@ -48,12 +48,6 @@ for (let i = 0; i < colors.length; i++) {
 
 /**************************************************************************************************************************/
 
-board.addEventListener("touchstart", function () {
-    ctxBoard.fillText("Bonsoir", 100, 100);
-});
-
-/**************************************************************************************************************************/
-
 let canvasX, canvasY, begin = true;
 let size = document.getElementById("size");
 ctxBoard.lineJoin = "round";
