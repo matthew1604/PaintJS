@@ -1,0 +1,33 @@
+html {
+    background-color: grey;
+}
+
+canvas {
+    background-color: white;
+    cursor: crosshair;
+    border: solid 1px black;
+    border-radius: 1%;
+}
+
+ul {
+    list-style: none;
+    width: 70%;
+    margin: 15px auto;
+    display: flex;
+    justify-content: space-around;
+}
+
+.color {
+    margin-right: 15px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.erase {
+    width: 120px;
+    height: 70px;
+    background-image: url("../img/gomme.png");
+    background-size: 120px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
