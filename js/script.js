@@ -66,7 +66,7 @@ document.addEventListener("DOMMouseScroll", function () {
 
 //Chrome
 document.addEventListener("mousewheel", function () {
-    if(event.detail < 0) {
+    if(event.deltaY < 0) {
         if (parseInt(size.innerHTML) < 30) size.innerHTML = parseInt(size.innerHTML) + 1 + "";
     } else {
         if (parseInt(size.innerHTML) > 1) size.innerHTML = parseInt(size.innerHTML) - 1 + "";
