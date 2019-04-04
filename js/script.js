@@ -54,7 +54,18 @@ ctxBoard.lineJoin = "round";
 ctxBoard.lineCap = "round";
 ctxBoard.lineWidth = 3 * parseInt(size.innerHTML);
 
+//Firefox
 document.addEventListener("DOMMouseScroll", function () {
+    if(event.detail < 0) {
+        if (parseInt(size.innerHTML) < 30) size.innerHTML = parseInt(size.innerHTML) + 1 + "";
+    } else {
+        if (parseInt(size.innerHTML) > 1) size.innerHTML = parseInt(size.innerHTML) - 1 + "";
+    }
+        ctxBoard.lineWidth = 3 * parseInt(size.innerHTML);
+});
+
+//Chrome
+document.addEventListener("mousewheel", function () {
     if(event.detail < 0) {
         if (parseInt(size.innerHTML) < 30) size.innerHTML = parseInt(size.innerHTML) + 1 + "";
     } else {
